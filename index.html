@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Universtità degli Studi di Firenze</title>
+    <link rel="stylesheet" href="reset.css">
+  </head>
+
+  <style>
+
+    body {
+      box-sizing: border-box;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+      font-family: sans-serif;
+    }
+    /* Header and navigation
+    ————————————————————————————————————————*/
+
+    .header {
+      background: #ccc;
+      padding-top: 27.34%;
+      position: relative;
+    }
+
+    @media screen and (min-width: 769px){
+      .header {
+        padding-top: 0px;
+        height: 210px;
+      }
+    }
+
+    .logo-box {
+      background: #7ba2e0;
+      position: absolute;
+      width: 42%;
+      height: 70%;
+      bottom: 15%;
+      left: 6%;
+      visibility: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      height: 70%;
+      bottom: 15%;
+      left: 6%;
+    }
+
+    @media screen and (min-width: 601px){
+      .logo {
+        left: 36px;
+      }
+    }
+
+    .navicon {
+      position: absolute;
+      height: 20%;
+      bottom: 40%;
+      right: 4%
+    }
+
+    .cerca-mobile-container {
+      position:absolute;
+      background: #777;
+      width: 16.27%;
+      padding-top: 15%;
+      top: 100%;
+      right: 0;
+      z-index: 2;
+    }
+
+    .desktop {display: none;}
+    .cerca {
+      position: absolute;
+      background: #eee;
+      width: 220px;
+      height: 43px;
+      top: 148px;
+      left: 36px;
+    }
+
+    .serviziol {
+      display: none;
+    }
+
+
+
+    /* Mobile|Desktop Breakpoint */
+    @media screen and (min-width: 1025px){
+      .header {
+        height: 306px;
+      }
+
+      .logo {
+        top: 20px;
+        height: 117px;;
+      }
+
+      .mobile {
+        display: none;
+      }
+
+      .desktop {
+        display: block;
+      }     
+    }
+
+    /* Desktop Navigation */
+
+    .menu-scuole { }
+    .menu-dipartimenti {}
+
+    .menu-sopra, .menu-sotto {
+      position: absolute;
+      width: 100%;
+      border-bottom: .1px solid #ccc;
+      background: #fff;
+    }
+    .menu-sopra {
+      height: 60px;
+      bottom: 36px;
+    }   
+    .menu-sotto {
+      height: 36px;
+      bottom: 0;
+    }
+
+
+
+    /* Main
+    ————————————————————————————————————————*/
+    .main {}
+
+
+    /* Home boxes
+    ————————————————————————————————————————*/
+
+    .home-box {
+      position: relative;
+    }
+    .home-box h1 {
+      position: absolute;
+      top: 20px; left: 36px;
+      border: .1px solid #888;
+      padding: 2px;
+      font-weight: bold;
+      color: #888;
+      text-transform: uppercase;
+    }
+
+
+    .home-slides {padding-top: 64.5%; background: #ddd;}
+    .home-news {padding-top: 78%; background: #eee;}
+    .home-unifimag {padding-top: 78%; background: #fff;}
+    .home-biblio {padding-top: 28%; background: #d1dce7;}
+    .home-sba {padding-top: 82%; background: #b3333a;}
+    .home-fup {padding-top: 82%; background: #eee;}
+
+
+    @media screen and (min-width: 769px){
+      .home-slides   {padding-top:0; height: 500px }
+      .home-news     {padding-top:0; height: 600px }
+      .home-unifimag {padding-top:0; height: 600px }
+      .home-biblio   {padding-top:0; height: 220px }
+      .home-sba      {padding-top:0; height: 635px }
+      .home-fup      {padding-top:0; height: 635px }
+    }
+
+
+    .lente-slides {
+      height: 23%;
+      background: #aaa;
+      position: absolute;
+      width: 100%; bottom: 0;
+    }
+
+    .calendar-button {
+      background: #666;
+      height: 100%;
+      position: absolute;
+      width: 16.27%;
+      bottom: 0;
+      right: 0;
+    }
+
+    .slide-title {
+      font: bold normal 3em sans-serif;
+      position: absolute;
+      font-size: 5vw;
+      color: #fff;
+      padding: 10px 36px 0 15%;      
+    }
+
+    /* Mobile|Desktop Breakpoint */
+    @media screen and (min-width: 1025px){
+      .lente-slides {
+        height: 100%;
+        width: 30%;
+        right: 0;
+      }
+
+      .slide-title {
+        font-size: 36px;
+        bottom: 100px;
+        padding: 0 15px;
+      }
+      .slide-description {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        height: 100px;
+        padding: 0px 15px
+      }
+      .calendar-button {
+        top: 0; left: 0;
+        height: 125px;
+        width: 150px;
+      }
+    }
+
+
+
+
+    -
+
+
+
+
+  </style> 
+
+  <body>
+
+
+    <!-- Construction lines -->
+    <div class="line"></div>
+    <style>
+      .line {
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid red;
+        z-index: 9;
+        height: 210px;
+        display: none;
+      }
+    </style>
+    <!-- End construction lines -->
+
+    <div class="container">
+
+      <div class="header">
+        <div class="logo-box"></div>
+        <div class="logo-container">
+          <a href=""><img class="logo" src="logo.svg" alt="logo"></a>
+        </div>
+        <div class="mobile-nav mobile">
+          <a href=""><img class="navicon" src="menu-button.svg" alt="menu"></a>
+        </div>
+        <div class="cerca-mobile-container mobile"></div>
+
+        <div class="cerca desktop"></div>
+        <div class="serviziol desktop"></div>
+        <div class="desktop-nav desktop ">
+          <div class="menu-dipartimenti"></div>
+          <div class="menu-scuole"></div>
+          <div class="menu-sopra"></div>
+          <div class="menu-sotto"></div>
+        </div> 
+      </div>
+
+
+
+
+      <div class="main">
+        <div class="home-box home-slides">
+          <div class="lente-slides">
+            <span class="slide-title"> data e luogo evento </span>
+            <p class="slide-description desktop"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ex!</p>
+            <div class="calendar-button"></div>
+          </div>
+        </div>
+
+
+        <div class="home-box home-news"><h1>news</h1></div>
+        <div class="home-box home-unifimag"><h1>unifimag</h1></div>
+        <div class="home-box home-biblio"><h1>biblio</h1></div>
+        <div class="home-box home-sba"><h1>sba</h1></div>
+        <div class="home-box home-fup"><h1>fup</h1></div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
