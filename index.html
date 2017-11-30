@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title> Unifi 2017 | Responsive</title>
     <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+
   </head>
 
   <style>
@@ -11,26 +13,26 @@
     body {
       box-sizing: border-box;
     }
-    p, h1, h2, h3, h4, h5, h6 {
-      font-family: sans-serif;
+    p, h1, h2, h3, h4, h5, h6, span {
+      font-family: 'Titillium Web', sans-serif;
     }
     /* Header and navigation
     ————————————————————————————————————————*/
 
-    .header {
+    #header {
       background: #ccc;
       padding-top: 27.34%;
       position: relative;
     }
 
     @media screen and (min-width: 769px){
-      .header {
+      #header {
         padding-top: 0px;
         height: 210px;
       }
     }
 
-    .logo-box {
+    #logo-box {
       background: #7ba2e0;
       position: absolute;
       width: 42%;
@@ -40,7 +42,7 @@
       visibility: hidden;
     }
 
-    .logo {
+    #logo {
       position: absolute;
       height: 70%;
       bottom: 15%;
@@ -48,7 +50,7 @@
     }
 
     @media screen and (min-width: 601px){
-      .logo {
+      #logo {
         left: 36px;
       }
     }
@@ -88,11 +90,11 @@
 
     /* Mobile|Desktop Breakpoint */
     @media screen and (min-width: 1025px){
-      .header {
+      #header {
         height: 306px;
       }
 
-      .logo {
+      #logo {
         top: 20px;
         height: 117px;;
       }
@@ -130,128 +132,213 @@
 
     /* Main
     ————————————————————————————————————————*/
-    .main {}
+    #main div {
+      position: relative;
+    }
 
 
     /* Home boxes
     ————————————————————————————————————————*/
 
-    .home-box {
-      position: relative;
-    }
-    .home-box h1 {
-      position: absolute;
-      top: 20px; left: 36px;
-      border: .1px solid #888;
-      padding: 2px;
-      font-weight: bold;
-      color: #888;
-      text-transform: uppercase;
-    }
+    #home-slides {padding-top: 64.5%}
+    #home-news {padding-top: 78%}
+    #home-unifimag {padding-top: 78%}
+    .home-box .box-header {padding-top: 11%}
+    #home-biblio .box-body {padding-top: 17.57%}
+    .box-body {padding-top: 71.61%}
+    #home-buro div {padding-top: 12%;}
 
-
-    .home-slides {padding-top: 64.5%; background: #ddd;}
-    .home-news {padding-top: 78%; background: #eee;}
-    .home-unifimag {padding-top: 78%; background: #fff;}
-    .home-biblio {padding-top: 28%; background: #d1dce7;}
-    .home-sba {padding-top: 82%; background: #b3333a;}
-    .home-fup {padding-top: 82%; background: #eee;}
 
 
     @media screen and (min-width: 769px){
-      .home-slides   {padding-top:0; height: 500px }
-      .home-news     {padding-top:0; height: 600px }
-      .home-unifimag {padding-top:0; height: 600px }
-      .home-biblio   {padding-top:0; height: 220px }
-      .home-sba      {padding-top:0; height: 635px }
-      .home-fup      {padding-top:0; height: 635px }
+      #home-slides   {padding-top:0; height: 500px }
+      #home-news     {padding-top:0; height: 600px }
+      #home-unifimag {padding-top:0; height: 600px }     
+
+      .home-box .box-header    {padding-top:0; height: 85px }
+      #home-buro div           {padding-top:0; height: 95px }
+      #home-biblio .box-body   {padding-top:0; height: 135px }
+      .box-body                {padding-top:0; height: 550px }
     }
 
+    #home-slides      {background: #ddd;}
+    #home-news        {background: #eee;}
+    #home-unifimag    {background: #fff;}
+    #home-biblio      {background: #d1dce7;}
+    #home-sba         {background: #b3333a;}
+    #home-fup         {background: #eee;}
+    #home-buro        {background: #aaa;}
+    #home-issuu       {background: #eee;}
 
-    .lente-slides {
-      height: 23%;
-      background: #aaa;
+    .home-box .box-header {
+      background-color: rgba(0,0,0, 0.2);
+      top: 0;
+    }
+
+    .box-body {
+    }
+
+    /* Titoli */    
+    .home-box h1 {
       position: absolute;
-      width: 100%; bottom: 0;
+      font-weight: 700;
+      font-size: 5vw;
     }
 
-    .calendar-button {
+    #home-news h1, #home-unifimag h1 {
+      top: 3%;
+      left: 15%;
+    }
+
+    .box-header h1 {
+      bottom: 30%;
+      left: 15%;
+    }
+
+    #home-buro h1 {
+      bottom: 30%;
+      left: 7%}
+
+    #home-buro div {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      margin: 0 8%;
+    }
+
+    #home-buro div:last-child {
+      border: none;
+    }
+
+    div#lente-slides {
+      position: absolute;
+      height: 25%;
+      background: #aaa;
+      width: 100%;
+      bottom: 0;
+    }
+
+    div#calendar-button {
+      position: absolute;
       background: #666;
       height: 100%;
-      position: absolute;
       width: 16.27%;
       bottom: 0;
       right: 0;
     }
 
-    .slide-title {
-      font: bold normal 3em sans-serif;
+    #slides-title {
       position: absolute;
+      font-weight: 700;
+      font-size: 3em;
       font-size: 5vw;
       color: #fff;
       padding: 10px 36px 0 15%;      
     }
 
-    /* Mobile|Desktop Breakpoint */
-    @media screen and (min-width: 1025px){
-      .lente-slides {
-        height: 100%;
-        width: 30%;
-        right: 0;
-      }
-
-      .slide-title {
-        font-size: 36px;
-        bottom: 100px;
-        padding: 0 15px;
-      }
-      .slide-description {
-        position: absolute;
-        color: #fff;
-        bottom: 0;
-        height: 100px;
-        padding: 0px 15px
-      }
-      .calendar-button {
-        top: 0; left: 0;
-        height: 125px;
-        width: 150px;
-      }
+    .home-box .pics {
+      position: absolute;
+      padding: 9.3% 12% 0 12%;
+      width: 76%;
+      height: 68.37%;
+      top: 0;
+    }
+    
+    .home-box .books {
+      position: absolute;
+      padding: 6% 33% 0 33%;
+      width: 34%;
+      height: 68.37%;
+      top: 0;
+    }
+    .biblio-search-box {
+      position: absolute;
+      box-sizing: border-box;
+      width: 76%;
+      height: 46%;
+      bottom: 27%;
+      left: 12%;
+      font-size: 2em;
     }
 
 
 
+    /* Mobile|Desktop Breakpoint */
+    @media screen and (min-width: 1025px){
+      #main {display: none};
 
-    -
+      /*
+      #lente-slides {
+      height: 100%;
+      width: 30%;
+      right: 0;
+    }
+
+      #slide-title {
+      font-size: 36px;
+      bottom: 100px;
+      padding: 0 15px;
+    }
+      #slide-description {
+      position: absolute;
+      color: #fff;
+      bottom: 0;
+      height: 100px;
+      padding: 0px 15px
+    }
+      #calendar-button {
+      top: 0; left: 0;
+      height: 125px;
+      width: 150px;
+    }
+      */
+    }
 
 
+
+    /* Footer
+    ————————————————————————————————————————*/
+
+    #footer {
+      background-color: rgb(200,200,200);
+    }
+
+    .footer-link {padding-top: 12%;}
+    #social-and-info {padding-top: 50%;}
+
+    @media screen and (min-width: 769px){
+      .footer-link                 {padding-top:0; height: 95px };
+      #social-and-info   {padding-top:0; height: 384px };
+    }
+
+
+    .footer-link {
+      position: relative;
+      color: #fff;
+      border-top: 1px solid #fff;
+      margin: 0 8%;
+    }
+    .footer-link:first-of-type {border: none;}
+
+    .footer-link h1 {
+      position: absolute;
+      bottom: 33%;
+      left: 7%;
+      font-size: 4vw;
+    }
+    
+
+    
 
 
   </style> 
 
   <body>
+    <div id="container">
 
-
-    <!-- Construction lines -->
-    <div class="line"></div>
-    <style>
-      .line {
-        position: fixed;
-        width: 100%;
-        border-bottom: 1px solid red;
-        z-index: 9;
-        height: 210px;
-        display: none;
-      }
-    </style>
-    <!-- End construction lines -->
-
-    <div class="container">
-
-      <div class="header">
-        <div class="logo-box"></div>
-        <div class="logo-container">
-          <a href=""><img class="logo" src="logo.svg" alt="logo"></a>
+      <div id="header">
+        <div id="logo-box"></div>
+        <div id="logo-container">
+          <a href=""><img id="logo" src="logo.svg" alt="logo"></a>
         </div>
         <div class="mobile-nav mobile">
           <a href=""><img class="navicon" src="menu-button.svg" alt="menu"></a>
@@ -271,23 +358,97 @@
 
 
 
-      <div class="main">
-        <div class="home-box home-slides">
-          <div class="lente-slides">
-            <span class="slide-title"> data e luogo evento </span>
-            <p class="slide-description desktop"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ex!</p>
-            <div class="calendar-button"></div>
+      <div id="main">
+        <div class="home-box" id="home-slides">
+          <div id="lente-slides">
+            <span id="slides-title"> data e luogo evento </span>
+            <p id="slide-description" class="desktop"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ex!</p>
+            <div id="calendar-button"></div>
           </div>
         </div>
 
 
-        <div class="home-box home-news"><h1>news</h1></div>
-        <div class="home-box home-unifimag"><h1>unifimag</h1></div>
-        <div class="home-box home-biblio"><h1>biblio</h1></div>
-        <div class="home-box home-sba"><h1>sba</h1></div>
-        <div class="home-box home-fup"><h1>fup</h1></div>
+        <div class="home-box" id="home-news">             <h1>News</h1>
+          <img class="pics" src="placeholder.png" alt="immagine news">
+        </div>
+        <div class="home-box" id="home-unifimag">
+          <h1>UnifiMagazine</h1>
+          <img class="pics" src="placeholder.png" alt="immagine unifimag">
+        </div>
 
+        <div class="home-box" id="home-biblio">
+          <div class="box-header">
+            <h1>Biblioteche</h1>
+          </div>
+          <div class="box-body">
+            <form id="biblioHomeSearch">
+              <input type="text" class="biblio-search-box">
+            </form>
+          </div>
+        </div>
+
+        <div class="home-box" id="home-sba">
+          <div class="box-header">
+            <h1>Sistema Museale di Ateneo</h1>
+          </div>
+          <div class="box-body">
+            <img class="pics" src="placeholder.png" alt="immagine unifimag">
+          </div>
+        </div>
+
+        <div class="home-box" id="home-fup">
+          <div class="box-header">
+            <h1>Florence University Press</h1>
+          </div>
+          <div class="box-body">
+            <img class="books" src="placeholder.png" alt="books issuu">
+          </div>
+        </div>
+
+        <div class="home-box" id="home-buro">
+          <div id="avvisi">
+            <h1>Avvisi</h1>
+          </div>
+          <div id="reclutamento">
+            <h1>Reclutamento e Assunzioni</h1>
+          </div>
+          <div id="albo-e-bandi">
+            <h1>Albo e Bandi</h1>
+          </div>
+        </div>
+
+        <div class="home-box" id="home-issuu">
+          <div class="box-header">
+            <h1>ISSUU</h1>
+          </div>
+          <div class="box-body">
+            <img class="books" src="placeholder.png" alt="books issuu">
+          </div>
+        </div>
       </div>
+
+      <div id="footer">
+        <div class="footer-link" id="ammin-trasp">
+          <h1>Amministrazione traspqarente</h1>
+        </div>
+        <div  class="footer-link" id="siaf">
+          <h1>SIAF</h1>
+        </div>
+        <div  class="footer-link" id="urp">
+          <h1>URP</h1>
+        </div>
+        <div  class="footer-link" id="personale">
+          <h1>Personale</h1>
+        </div>
+        <div id="social-and-info">
+          <div id="social-links">
+            <!-- <img src="placeholder.png" width="400px" height="100px"> -->
+          </div>
+          <div id="info">
+          </div>      
+        </div>
+      </div>
+
     </div>
 
   </body>
