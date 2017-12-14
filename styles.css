@@ -1,0 +1,575 @@
+/* General styles
+————————————————————————————————————————*/
+
+body {
+	box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* Header and navigation
+————————————————————————————————————————*/
+
+header {
+	background: #004180;
+	padding-top: 27.34%;
+	position: relative;
+}
+
+@media screen and (min-width: 769px) {
+	header {
+		padding-top: 0px;
+		height: 210px;
+	}
+}
+
+#logo {
+	position: absolute;
+	height: 70%;
+	bottom: 15%;
+	left: 6%;
+}
+
+@media screen and (min-width: 601px) {
+	#logo {
+		left: 36px;
+	}
+}
+
+.navicon {
+	position: absolute;
+	height: 20%;
+	bottom: 40%;
+	right: 4%
+}
+
+.cerca-mobile-container {
+	position: absolute;
+	background: #A00009;
+	width: 16.27%;
+	padding-top: 15%;
+	top: 100%;
+	right: 0;
+	z-index: 2;
+}
+
+.cerca-icon {
+	position: absolute;
+	bottom: 0%;
+	height: 80%;
+	margin: 10% 20%;
+}
+
+.desktop {
+	display: none;
+}
+
+.cerca {
+	position: absolute;
+	background: #eee;
+	width: 220px;
+	height: 43px;
+	top: 148px;
+	left: 36px;
+}
+
+.serviziol {
+	display: none;
+}
+
+
+
+/* Mobile|Desktop Breakpoint */
+
+@media screen and (min-width: 1025px) {
+	header {
+		height: 306px;
+	}
+
+	#logo {
+		top: 20px;
+		height: 117px;
+		;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+}
+
+/* Desktop Navigation */
+
+.menu-scuole {}
+
+.menu-dipartimenti {}
+
+.menu-sopra,
+.menu-sotto {
+	position: absolute;
+	width: 100%;
+	border-bottom: .1px solid #ccc;
+	background: #fff;
+}
+
+.menu-sopra {
+	height: 60px;
+	bottom: 36px;
+}
+
+.menu-sotto {
+	height: 36px;
+	bottom: 0;
+}
+
+
+
+/* Main
+————————————————————————————————————————*/
+
+main div {
+	position: relative;
+}
+
+main h1 {
+	font-weight: 700;
+	font-size: 5vw;
+}
+
+
+/* Pages
+————————————————————————————————————————*/
+
+article {
+	width: 76%;
+	text-align: justify;
+	padding-top: 20%;
+	margin: 0 auto
+}
+
+article h1 {
+	padding-bottom: 5%
+}
+
+;
+
+article figure {
+	width: 100%;
+}
+
+article img.immagine-singola {
+	width: 100%;
+	height: auto;
+	margin: 7% 0;
+}
+
+article img.immagine-doppia {
+	width: 45%;
+	height: auto;
+	margin: 7% 2%;
+}
+
+
+
+/* Home boxes
+————————————————————————————————————————*/
+
+/* SIZE */
+
+#home-slides {
+	padding-top: 64.5%
+}
+
+#home-news {
+	padding-top: 78%
+}
+
+#home-unifimag {
+	padding-top: 78%
+}
+
+.home-box .box-header {
+	padding-top: 11%
+}
+
+#home-sba .box-body {
+	padding-top: 17.57%
+}
+
+.box-body {
+	padding-top: 71.61%
+}
+
+#home-pub div {
+	padding-top: 12%;
+}
+
+
+
+@media screen and (min-width: 769px) {
+	#home-slides {
+		padding-top: 0;
+		height: 500px
+	}
+	#home-news {
+		padding-top: 0;
+		height: 600px
+	}
+	#home-unifimag {
+		padding-top: 0;
+		height: 600px
+	}
+
+	.home-box .box-header {
+		padding-top: 0;
+		height: 85px
+	}
+	#home-pub div {
+		padding-top: 0;
+		height: 95px
+	}
+	#home-sba .box-body {
+		padding-top: 0;
+		height: 135px
+	}
+	.box-body {
+		padding-top: 0;
+		height: 550px
+	}
+}
+
+/* BG COLORS */
+
+#home-news {
+	background: #E6E6E6;
+}
+
+#home-unifimag {
+	background: #fff;
+}
+
+#home-sba {
+	background: #d1dce7;
+}
+
+#home-sba .box-header {
+	background: #668BB1;
+}
+
+#home-sma {
+	background: #B3333A;
+}
+
+#home-sma .box-header {
+	background: #A00009;
+}
+
+#home-fup {
+	background: #eee;
+}
+
+#home-fup .box-header {
+	background: #CCCCCC;
+}
+
+#home-pub {
+	background: #83A2C0;
+}
+
+#home-pub .box-header {
+	background: #668BB1;
+}
+
+#home-issuu {
+	background: #E6E6E6;
+}
+
+#home-issuu .box-header {
+	background: #CCCCCC;
+}
+
+.box-body {}
+
+
+/* HEADERS */
+
+.home-box h1 {
+	position: absolute;
+}
+
+#home-news h1,
+#home-unifimag h1 {
+	top: 3%;
+	left: 15%;
+}
+
+.box-header h1 {
+	bottom: 30%;
+	left: 15%;
+}
+
+#home-pub h1 {
+	bottom: 30%;
+	left: 7%
+}
+
+#home-pub .next-icon {
+	top: 30%;
+	left: 90%
+}
+
+#home-pub div {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	margin: 0 8%;
+}
+
+#home-pub div:last-child {
+	border: none;
+}
+
+
+/* CUSTOM ELEMENTS */
+
+div#lente-slides {
+	position: absolute;
+	height: 25%;
+	background: rgba(102, 139, 177, 0.67);
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+
+}
+
+div#calendar-button {
+	position: absolute;
+	background: #668BB1;
+	height: 100%;
+	width: 16.27%;
+	bottom: 0;
+	right: 0;
+}
+
+.calendar-icon {
+	margin: 15% 24%;
+	height: 70%;
+}
+
+#slides-title {
+	position: absolute;
+	font-weight: 700;
+	font-size: 3em;
+	font-size: 5vw;
+	color: #fff;
+	padding: 0 36px 0 15%;
+}
+
+.home-box h2 {
+	position: absolute;
+	bottom: 5.85%;
+	margin: 0 12%;
+	font-weight: 700;
+	font-size: 4.5vw;
+	border-bottom: 2px solid #000;
+	width: 76%;
+	max-height: 12%;
+	overflow: hidden;
+}
+
+.prev-icon,
+.next-icon {
+	position: absolute;
+	top: 43.5%;
+	width: 3%;
+}
+
+.prev-icon {
+	left: 6%;
+}
+
+.next-icon {
+	right: 6%;
+}
+
+#home-fup .prev-icon,
+#home-issuu .prev-icon {
+	left: 26%;
+}
+
+#home-fup .next-icon,
+#home-issuu .next-icon {
+	right: 26%;
+}
+
+.home-box .pics {
+	position: absolute;
+	padding: 9.3% 12% 0 12%;
+	width: 76%;
+	height: 68.37%;
+	top: 0;
+}
+
+.home-box .book-cover {
+	position: absolute;
+	padding: 6% 33% 0 33%;
+	width: 34%;
+	height: 68.37%;
+	top: 0;
+}
+
+.sba-search-box {
+	position: absolute;
+	box-sizing: border-box;
+	width: 76%;
+	height: 46%;
+	bottom: 27%;
+	left: 12%;
+	font-size: 2em;
+}
+
+
+
+/* Mobile|Desktop Breakpoint */
+
+@media screen and (min-width: 1025px) {
+
+	#lente-slides {
+		height: 100%;
+		width: 30%;
+		right: 0;
+	}
+
+	#slides-title {
+		font-size: 36px;
+		bottom: 100px;
+		padding: 0 15px;
+	}
+	#slide-description {
+		position: absolute;
+		color: #fff;
+		bottom: 0;
+		height: 100px;
+		padding: 0px 15px
+	}
+	#calendar-button {
+		top: 0;
+		left: 0;
+		height: 125px;
+		width: 150px;
+	}
+}
+
+
+
+/* Footer
+————————————————————————————————————————*/
+
+footer {
+	background-color: #004180;
+}
+
+.footer-link {
+	padding-top: 12%;
+}
+
+#social-and-info {}
+
+@media screen and (min-width: 769px) {
+	.footer-link {
+		padding-top: 0;
+		height: 95px
+	}
+	;
+	#social-and-info {
+		padding-top: 0;
+		height: 384px
+	}
+	;
+}
+
+
+.footer-link {
+	position: relative;
+	color: #fff;
+	border-top: 1px solid #fff;
+	margin: 0 8%;
+}
+
+.footer-link:first-of-type {
+	border: none;
+}
+
+.footer-link h1 {
+	position: absolute;
+	bottom: 33%;
+	left: 7%;
+	font-size: 4vw;
+}
+
+footer #social-links {
+	padding-top: 9.11%;
+	position: relative;
+}
+
+footer #social-links img {
+	position: absolute;
+	bottom: 0%;
+	right: 8%;
+	height: 100%
+}
+
+footer #social-and-info {
+	padding: 6% 0;
+}
+
+footer #info {
+	text-align: right;
+	color: #fff
+}
+
+footer #info h2 {
+	font-size: 3vw;
+	margin: 4% 8% 1%;
+	font-weight: 700;
+}
+
+footer #info p {
+	font-size: 2.5vw;
+	margin: 1% 8%;
+}
+
+
+
+
+
+
+/* WORK IN PROGRESS
+————————————————————————————————————————*/
+
+#desktop-alert {
+	text-align: center;
+	color: red;
+	padding-top: 30px;
+}
+
+@media screen and (min-width: 1025px) {
+	header,
+	main,
+	footer {
+		display: none;
+	}
+}
