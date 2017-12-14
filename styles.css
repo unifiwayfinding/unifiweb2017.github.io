@@ -65,8 +65,8 @@ header {
 
 .cerca-icon {
 	position: absolute;
-	bottom: 0%;
-	height: 80%;
+	display: block;
+	bottom: 0;
 	margin: 10% 20%;
 }
 
@@ -356,13 +356,14 @@ article img.immagine-doppia {
 div#lente-slides {
 	position: absolute;
 	background: rgba(102, 139, 177, 0.67);
-	height: 23%;
+	height: 29%;
 	bottom: 0;
 	width: 100%;
-	display: flex;
-	align-items: center;
 }
 
+#slides-title-container {
+	height: 61%;
+}
 
 #home-slides h1 {
 	position: absolute;
@@ -370,7 +371,8 @@ div#lente-slides {
 	font-weight: 700;
 	font-size: 3em;
 	font-size: 5vw;
-	padding: 0 36px 0 15%;
+	padding-left: 12%;
+	bottom: 0;
 
 }
 
@@ -384,11 +386,10 @@ div#calendar-button {
 }
 
 .calendar-icon {
-	margin: 15% 24%;
-	height: 70%;
+	display: block;
+	height: 80%;
+	margin: 10% auto;
 }
-
-
 
 .home-box h2 {
 	position: absolute;
@@ -399,6 +400,7 @@ div#calendar-button {
 	border-bottom: 2px solid #000;
 	width: 76%;
 	max-height: 12%;
+	padding-bottom: 1%;
 	overflow: hidden;
 }
 
@@ -554,14 +556,14 @@ footer #info {
 }
 
 footer #info h2 {
-	font-size: 3vw;
-	margin: 4% 8% 1%;
+	font-size: 4vw;
+	margin: 6% 8% 2%;
 	font-weight: 700;
 }
 
 footer #info p {
-	font-size: 2.5vw;
-	margin: 1% 8%;
+	font-size: 3.5vw;
+	margin: 1.5% 8%;
 }
 
 footer a {}
