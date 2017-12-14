@@ -144,10 +144,6 @@ main div {
 	position: relative;
 }
 
-main h1 {
-	font-weight: 700;
-	font-size: 5vw;
-}
 
 
 /* Pages
@@ -160,12 +156,14 @@ article {
 }
 
 article h1 {
-	padding-bottom: 5%
+	padding-bottom: 5%;
+	font-weight: 700;
+	font-size: 4rem;
 }
 
 article p {
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 2rem;
+	line-height: 1.15;
 }
 
 ;
@@ -344,6 +342,8 @@ article img.immagine-doppia {
 #home-pub div:last-child {
 	border: none;
 }
+
+#home-sba h1, #home-sma h1 {color: #fff};
 
 
 /* CUSTOM ELEMENTS */
