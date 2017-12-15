@@ -3,16 +3,10 @@
 
 body {
 	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span {
+input {
 	font-family: 'Titillium Web', sans-serif;
 }
 
@@ -155,8 +149,7 @@ main {
 ————————————————————————————————————————*/
 
 article {
-	padding-top: 24%;
-	padding-bottom: 24%;
+	padding: 24% 0;
 }
 
 article h1 {
@@ -238,15 +231,12 @@ footer {
 }
 
 footer #social-and-info {
-	padding: 6% 0;
+	padding: 22% 0 11%;
 }
 
 footer #social-links {
-	padding-top: 9.11%;
 	position: relative;
 }
-
-
 
 
 footer #info {
@@ -255,14 +245,14 @@ footer #info {
 }
 
 footer #info h2 {
-	font-size: 4vw;
-	margin: 6% 8% 2%;
+	font-size: 20px;
+	margin: 6% 0 2%;
 	font-weight: 700;
 }
 
 footer #info p {
-	font-size: 3.5vw;
-	margin: 1.5% 8%;
+	font-size: 18px;
+	margin: 1.5% 0;
 }
 
 footer a {}
