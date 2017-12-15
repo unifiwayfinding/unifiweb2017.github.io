@@ -1,0 +1,301 @@
+/* Home boxes
+————————————————————————————————————————*/
+
+/* SIZE */
+
+#home-slides {
+	padding-top: 64.5%;
+}
+
+#home-news {
+	padding-top: 78%
+}
+
+#home-unifimag {
+	padding-top: 78%
+}
+
+.home-box .box-header {
+	padding-top: 11%
+}
+
+#home-sba .box-body {
+	padding-top: 17.57%
+}
+
+.box-body {
+	padding-top: 71.61%
+}
+
+#home-pub div {
+	padding-top: 12%;
+}
+
+
+
+@media screen and (min-width: 769px) {
+	#home-slides {
+		padding-top: 0;
+		height: 500px
+	}
+	#home-news {
+		padding-top: 0;
+		height: 600px
+	}
+	#home-unifimag {
+		padding-top: 0;
+		height: 600px
+	}
+
+	.home-box .box-header {
+		padding-top: 0;
+		height: 85px
+	}
+	#home-pub div {
+		padding-top: 0;
+		height: 95px
+	}
+	#home-sba .box-body {
+		padding-top: 0;
+		height: 135px
+	}
+	.box-body {
+		padding-top: 0;
+		height: 550px
+	}
+}
+
+/* BG COLORS */
+
+#home-news {
+	background: #E6E6E6;
+}
+
+#home-unifimag {
+	background: #fff;
+}
+
+#home-sba {
+	background: #d1dce7;
+}
+
+#home-sba .box-header {
+	background: #668BB1;
+}
+
+#home-sma {
+	background: #B3333A;
+}
+
+#home-sma .box-header {
+	background: #A00009;
+}
+
+#home-fup {
+	background: #eee;
+}
+
+#home-fup .box-header {
+	background: #CCCCCC;
+}
+
+#home-pub {
+	background: #83A2C0;
+}
+
+#home-pub .box-header {
+	background: #668BB1;
+}
+
+#home-issuu {
+	background: #E6E6E6;
+}
+
+#home-issuu .box-header {
+	background: #CCCCCC;
+}
+
+.box-body {}
+
+
+/* HEADERS */
+
+.home-box h1 {
+	position: absolute;
+	font-weight: 700;
+	font-size: 5vw;
+
+}
+
+#home-news h1,
+#home-unifimag h1 {
+	top: 3%;
+	left: 15%;
+}
+
+.box-header h1 {
+	bottom: 30%;
+	left: 15%;
+}
+
+#home-pub h1 {
+	bottom: 30%;
+	left: 7%
+}
+
+#home-pub .next-icon {
+	top: 30%;
+	left: 90%
+}
+
+#home-pub div {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	margin: 0 8%;
+}
+
+#home-pub div:last-child {
+	border: none;
+}
+
+#home-sba h1,
+#home-sma h1 {
+	color: #fff
+}
+
+
+/* CUSTOM ELEMENTS */
+
+div#lente-slides {
+	position: absolute;
+	background: rgba(102, 139, 177, 0.67);
+	height: 29%;
+	bottom: 0;
+	width: 100%;
+}
+
+#slides-title-container {
+	height: 61%;
+}
+
+#home-slides h1 {
+	position: absolute;
+	color: #fff;
+	font-weight: 700;
+	font-size: 3em;
+	font-size: 5vw;
+	padding-left: 12%;
+	bottom: 0;
+
+}
+
+div#calendar-button {
+	position: absolute;
+	background: #668BB1;
+	height: 100%;
+	width: 16.27%;
+	bottom: 0;
+	right: 0;
+}
+
+.calendar-icon {
+	display: block;
+	height: 80%;
+	margin: 10% auto;
+}
+
+.home-box h2 {
+	position: absolute;
+	bottom: 5.85%;
+	margin: 0 12%;
+	font-weight: 700;
+	font-size: 4.5vw;
+	border-bottom: 2px solid #000;
+	width: 76%;
+	max-height: 12%;
+	padding-bottom: 1%;
+	overflow: hidden;
+}
+
+.prev-icon,
+.next-icon {
+	position: absolute;
+	top: 43.5%;
+	width: 3%;
+}
+
+.prev-icon {
+	left: 6%;
+}
+
+.next-icon {
+	right: 6%;
+}
+
+#home-fup .prev-icon,
+#home-issuu .prev-icon {
+	left: 26%;
+}
+
+#home-fup .next-icon,
+#home-issuu .next-icon {
+	right: 26%;
+}
+
+.home-box .pics {
+	position: absolute;
+	padding: 9.3% 12% 0 12%;
+	width: 76%;
+	height: 68.37%;
+	top: 0;
+}
+
+.home-box .book-cover {
+	position: absolute;
+	padding: 6% 33% 0 33%;
+	width: 34%;
+	height: 68.37%;
+	top: 0;
+}
+
+.sba-search-box {
+	position: absolute;
+	box-sizing: border-box;
+	width: 76%;
+	height: 46%;
+	bottom: 27%;
+	left: 12%;
+	font-size: 2em;
+}
+
+
+
+/* Mobile|Desktop Breakpoint */
+
+@media screen and (min-width: 1025px) {
+
+	#lente-slides {
+		height: 100%;
+		width: 30%;
+		right: 0;
+	}
+
+	#slides-title {
+		font-size: 36px;
+		bottom: 100px;
+		padding: 0 15px;
+	}
+	#slide-description {
+		position: absolute;
+		color: #fff;
+		bottom: 0;
+		height: 100px;
+		padding: 0px 15px
+	}
+	#calendar-button {
+		top: 0;
+		left: 0;
+		height: 125px;
+		width: 150px;
+	}
+}
