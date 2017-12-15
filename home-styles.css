@@ -5,20 +5,22 @@ main.home {
 	padding: 0;
 }
 
-main section,
-main div {
+main.home section,
+main.home div {
 	position: relative;
 	overflow: hidden;
 }
 
-main header,
-main figure,
-main .box-body {
+main.home header,
+main.home figure,
+main.home .box-body {
 	padding: 0 20px;
 	box-sizing: border-box;
 }
 
-a {text-decoration: none;}
+a {
+	text-decoration: none;
+}
 
 
 /* Slides box
@@ -44,25 +46,20 @@ a {text-decoration: none;}
 div#lente-slides {
 	position: absolute;
 	background: rgba(102, 139, 177, 0.67);
-	height: 29%;
+	height: 27%;
 	bottom: 0;
 	width: 100%;
 }
 
 #slides-title-container {
 	position: relative;
-	height: 61%;
-	padding-top: 20px;
-}
-
-#home-slides h1 {
+	padding-top: 17px;
+	padding-left: 20px;
 	color: #fff;
 	font-weight: 700;
-	font-size: 3em;
 	font-size: 22px;
-	padding-left: 12%;
-	bottom: 0;
 }
+
 
 div#calendar-button {
 	position: absolute;
@@ -129,7 +126,9 @@ div#calendar-button {
 
 .home-box h1 {
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -168,7 +167,6 @@ div#calendar-button {
 }
 
 /* CUSTOM ELEMENTS */
-
 
 #home-pub .next-icon {
 	position: absolute;
