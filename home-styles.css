@@ -11,6 +11,7 @@ main.home div {
 	overflow: hidden;
 }
 
+
 main.home header,
 main.home figure,
 main.home .box-body {
@@ -20,6 +21,7 @@ main.home .box-body {
 
 a {
 	text-decoration: none;
+	color: #000;
 }
 
 
@@ -29,6 +31,8 @@ a {
 #home-slides {
 	position: relative;
 	padding-top: 64.5%;
+	background-image: url(res/slide-01.jpg);
+	background-size: 100%;
 }
 
 @media screen and (min-width: 769px) {
@@ -38,21 +42,103 @@ a {
 	}
 }
 
-#home-slides {
-	background-image: url(res/slide-01.jpg);
-	background-size: 100%;
+#calendar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #668BB1;
+	z-index: 3;
+	display: none;
+	overflow: hidden;
 }
 
+#calendar-goto a {
+	float: left;
+	margin-top: 22px;
+	margin-left: 10px;
+	color: #fff;
+	text-decoration: underline;
+	color: #ddd;
+	font-weight: 700;
+}
+
+#calendar-close {
+	background-image: url(res/close-icon.svg);
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+	cursor: pointer;
+	float: right;
+}
+
+#calendar-wrapper {
+	clear: both;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.day-block {
+	clear: both;
+}
+
+#calendar .data {
+	position: relative;
+	float: left;
+	width: 50px;
+	margin-left: 20px;
+	color: #fff;
+}
+
+#calendar .day {
+	font-size: 40px;
+	font-weight: 700;
+} 
+
+#calendar .month {
+	text-transform: uppercase;
+	position: absolute;
+	left: 60px;
+	top: 5px;
+	font-weight: 700;
+} 
+
+#calendar .year {
+	text-transform: uppercase;
+	position: absolute;
+	left: 60px;
+	top: 20px;
+} 
+
+#calendar .events {
+	width: 220px;
+	float: right;
+	padding-right: 12px;
+}
+
+
+#calendar li {
+	height: 47px;
+	padding: 7px 10px;
+	font-size: 16px;
+	line-height: 1;
+	border-top: 1px solid #fff;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+}
 div#lente-slides {
 	position: absolute;
-	background: rgba(102, 139, 177, 0.67);
-	height: 27%;
-	bottom: 0;
 	width: 100%;
+	height: 60px;
+	bottom: 0;
+	right: 0;
+	background: rgba(102, 139, 177, 0.67);
+
 }
 
 #slides-title-container {
-	position: relative;
+	position: absolute;
 	padding-top: 17px;
 	padding-left: 20px;
 	color: #fff;
@@ -60,16 +146,13 @@ div#lente-slides {
 	font-size: 22px;
 }
 
-
-div#calendar-button {
+#calendar-button {
 	position: absolute;
-	background: #668BB1;
-	height: 100%;
-	width: 16.27%;
-	bottom: 0;
 	right: 0;
+	height: 100%;
+	background: #668BB1;
+	cursor: pointer;
 }
-
 
 /* Home boxes
 ————————————————————————————————————————*/
@@ -87,10 +170,16 @@ div#calendar-button {
 	width: 100%;
 }
 
+.home-box .pics-container{
+	padding-bottom: 54%;
+	background: pink;
+}
+
 .home-box .pics {
+	position: absolute;
 	width: 100%;
 	height: auto;
-	top: 0;
+	bottom: 0;
 }
 
 #home-sma .pics {
@@ -99,14 +188,17 @@ div#calendar-button {
 
 .book-container {
 	padding-top: 28px;
-	padding-bottom: 51px;
+	padding-bottom: 17px;
 	text-align: center;
+	margin-left: -200px;
+	margin-right: -200px;
 }
 
 .home-box .book-cover {
 	height: 200px;
 	top: 0;
 	box-shadow: 10px 10px #ccc;
+	margin: 0 20px;
 }
 
 .home-box input.search-box {
@@ -116,6 +208,7 @@ div#calendar-button {
 	height: 43px;
 	font-size: 20px;
 	border: none;
+	border-radius: 0;
 	box-sizing: border-box;
 	padding-left: 20px;
 	color: #888;
@@ -150,14 +243,21 @@ div#calendar-button {
 	border-bottom: 3px solid #000;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-bottom: 35px;
+}
+
+.carousel-points{
+	background-image: url(res/pallini.svg);
+	background-repeat: no-repeat;
+	height: 14px;
+	left: 50%;
+	margin: 7px 0 20px -22px;
 }
 
 #home-sma .didascalia {
 	color: #fff;
 	border: none;
 	padding-top: 16px;
-	padding-bottom: 40px;
+	padding-bottom: 14px;
 	font-size: 26px;
 }
 
@@ -172,7 +272,7 @@ div#calendar-button {
 	position: absolute;
 	top: 30%;
 	width: 3%;
-	right: 20px;
+	right: 0;
 }
 
 #home-pub div {
@@ -185,13 +285,20 @@ div#calendar-button {
 }
 
 .vai-al-sito {
-	text-decoration: underline;
 	position: absolute;
-	padding: inherit;
+	padding-right: 20px;
 	right: 0;
 	font-weight: 700;
 	font-size: 18px;
+	text-decoration: underline;
 }
+
+#home-news .vai-al-sito,
+#home-unifimag .vai-al-sito {
+	color: #888;
+	top: 22px;
+}
+
 
 #home-sba .vai-al-sito {
 	color: #777;
@@ -200,14 +307,16 @@ div#calendar-button {
 
 #home-sma .vai-al-sito {
 	color: #fff;
-	bottom: 44px;
+	bottom: 59px;
 }
 
 #home-fup .vai-al-sito,
 #home-issuu .vai-al-sito {
 	color: #000;
-	bottom: -34px;
+	bottom: 18px;
 }
+
+
 
 
 

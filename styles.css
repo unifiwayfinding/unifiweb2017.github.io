@@ -1,3 +1,13 @@
+/* APPUNTI BREAKPOINTS
+smartphones
+larghezza-portrait: 320-504 px
+parghezza-landscape: 346-812
+
+tablets
+larghezza-portrait: 600-800 (1024) px
+parghezza-landscape: 800-1280 (1366, 1440) px
+*/
+
 /* General styles
 ————————————————————————————————————————*/
 
@@ -30,11 +40,11 @@ header {
 	padding: 20px;
 }
 
-img#logo {
-	max-height: 83px;
-	display: block;
+#logo {
+	height: 83px;
 }
 
+/*
 @media screen and (min-width: 769px) {
 	header {
 		padding-top: 0px;
@@ -44,44 +54,131 @@ img#logo {
 		left: 36px;
 	}
 }
+*/
 
-.navicon {
+#mobile-nav-button {
+	background-image: url(res/menu-icon.svg);
+	background-repeat: no-repeat;
 	position: absolute;
-	height: 20%;
-	bottom: 40%;
-	right: 4%
+	height: 22px;
+	width: 36px;
+	top: 49px;
+	right: 16px;
+	cursor: pointer;
 }
 
-.cerca-mobile-container {
+#menu {
 	position: absolute;
-	background: #A00009;
-	width: 16.27%;
-	padding-top: 15%;
-	top: 100%;
+	top: 0;
 	right: 0;
-	display: block;
+	width: 70%;
+	text-align: right;
+	z-index: 4;
+	background: #004180;
+}
+
+#mobile-nav-close {
+	display: inline-block;
+	background-image: url(res/close-icon.svg);
+	background-repeat: no-repeat;
+	height: 27px;
+	width: 26px;
+	margin: 47px 23px 52px;
+	cursor: pointer;
+}
+
+
+#obscuro {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
 	z-index: 2;
 }
 
-.cerca-icon {
+#servizi-ol {
+	font-weight: 700;
+}
+
+
+ul#top-menu,
+ul#lower-menu {
+	background: #A00009;
+}
+
+ul#upper-menu {
+	background: #668BB1;
+}
+
+ul#unifi-comunica {
+	background: #fff;
+}
+
+#unifi-comunica li {
+	color: #A00009;
+}
+
+nav li {
+	text-transform: uppercase;
+	padding: 15px 0;
+	margin: 0 12px;
+	font-size: 18px;
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+}
+
+nav li.apribile {
+	background-image: url(res/freccetta-basso.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: left;
+}
+
+nav li:last-child {
+	border: none;
+}
+
+
+
+
+.cerca-mobile-container {
 	position: absolute;
-	display: block;
-	bottom: 0;
+	width: calc(100% - 97px);
+	height: 60px;
+	top: 100%;
 	right: 0;
+	z-index: 3;
+}
+
+.cerca-mobile-button {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	background: #A00009;
+	cursor: pointer;
 }
 
 #cerca-mobile-field {
-	position: absolute;
 	top: 0;
-	right: 100%;
 	height: 100%;
+	width: 100%;
+	font-size: 21px;
 	box-sizing: border-box;
-	width: 250px;
-	padding: 10%;
-	font-size: 20px;
-	color: #ccc;
-	background: rgba (255,255,255,0.4);
+	padding-left: 10px;
+	padding-right: 70px;
+	color: #555;
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid grey;
+	border-radius: 0;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
 }
+
+
 
 /* Mobile|Desktop Breakpoint */
 
@@ -281,3 +378,16 @@ footer #info a {
 		display: none;
 	}
 }
+
+
+
+/* VARIAZIONI
+————————————————————————————————————————
+#obscuro {
+	top: 124px;
+} 
+
+#logo-container {z-index: 6; height: 84px;}
+#logo {position: absolute; z-index: 9;}
+
+*/

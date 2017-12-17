@@ -1,68 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
 	<meta charset="utf-8">
 	<title> Unifi 2017 | Responsive</title>
 	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="home-styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> </head>
-
-<style>
-	body {
-		background: #ccc
-	}
-
-	#container {
-		padding: 10%;
-		margin: auto;
-	}
-
-	img {
-		padding-bottom: 10%;
-	}
-
-	a {
-		display: block;
-		color: #000;
-		font-size: 6vw;
-		font-family: sans-serif;
-		text-decoration: none;
-		text-align: center;
-		background: #bbb;
-		padding: 10% 10%;
-		border: 2px solid #555;
-		border-radius: 10px;
-		margin: 4%;
-	}
-</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/myjs.js"></script>
+</head>
 
 <body>
 
-	<div id="container">
-		<img id="logo" src="res/logo.svg" alt="logo">
-		<a href="./home.html">HOME PAGE</a>
-		<a href="./page.html">PAGINA INTERNA</a>
+	<header>
+		<div id="logo-container">
+			<a href="page.html"><img id="logo" src="./res/logo.png" alt="logo"></a>
+		</div>
+		<div id="mobile-nav-button" class="mobile"></div>
+		<nav>
+			<div id="obscuro" class="mobile"></div>
+			<div id="menu">
+				<div id="mobile-nav-close" class="mobile"></div>
+				<ul>
+					<li id="servizi-ol">Servizi Online</li>
+				</ul>
+				<ul id="top-menu">
+					<li class="apribile">Scuole</li>
+					<li class="apribile">Dipartimenti</li>
+				</ul>
+				<ul id="upper-menu">
+					<li class="apribile">Ateneo</li>
+					<li class="apribile">Didattica</li>
+					<li class="apribile">Ricerca</li>
+					<li class="apribile">Internazionalizzazione</li>
+					<li class="apribile">Innovazione e imprese</li>
+				</ul>
+				<ul id="lower-menu">
+					<li class="apribile">Studenti</li>
+					<li class="apribile">Vivere l'Università</li>
+					<li class="apribile">Placement</li>
+					<li class="apribile">Orientamento</li>
+					<li>Biblioteche</li>
+				</ul>
+				<ul id="unifi-comunica">
+					<li>Unifi Comunica</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="cerca-mobile-container mobile">
+			<img id="cerca-mobile-button" class="cerca-mobile-button" src="res/cerca-icon-w.svg" alt="">
+			<input id="cerca-mobile-field" placeholder="Cerca nel sito">
+		</div>
+	</header>
+
+	<section id="home-slides">
+		<div id="calendar">
+			<div id="calendar-goto"><a href="">VEDI TUTTI GLI EVENTI</a></div>
+			<div id="calendar-close"></div>
+			<div id="calendar-wrapper">
+				<div class="day-block">
+					<div class="data">
+						<span class="day">28</span>
+						<span class="month">Ottobre</span>
+						<span class="year">2017</span>
+					</div>
+					<div class="events">
+						<ul>
+							<li class="event">Welcome Meeting</li>
+							<li class="event">Uniche e fragili, le farfalle dell’Arcipelago toscano</li>
+							<li class="event">La settimana della Sociologia</li>
+						</ul>
+					</div>
+				</div>
+				<div class="day-block">
+					<div class="data">
+						<span class="day">30</span>
+						<span class="month">Ottobre</span>
+						<span class="year">2017</span>
+					</div>
+					<div class="events">
+						<ul>
+							<li class="event">Apertura iscrizioni</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="lente-slides">
+			<div id="slides-title-container">
+				<h1 id="slides-title"> data e luogo evento</h1>
+			</div>
+			<img id="calendar-button" src="res/calendar-icon-w.svg" alt="open">
+		</div>
+	</section>
+
+	<main class="home">
+
+		<section class="home-box" id="home-news">
+			<header>
+				<h1>News</h1>
+			</header>
+			<figure>
+				<div class="pics-container">
+				<img class="pics" src="res/villa-lq-01.jpg" alt="immagine news">
+				</div>
+				<h2 class="descriptions">News in primo piano, con un breve titolo descrittivo </h2>
+				<div class="carousel-points"></div>
+			</figure>
+			<a href="" class="vai-al-sito">VEDI TUTTO</a>
+		</section>
+
+		<section class="home-box" id="home-unifimag">
+			<header>
+				<h1>UnifiMagazine</h1>
+			</header>
+			<figure>
+				<div class="pics-container">
+				<img class="pics" src="res/students.jpg" alt="immagine unifimag">
+				</div>
+				<h2 class="descriptions">Articolo in primo piano</h2>
+				<div class="carousel-points"></div>
+			</figure>
+			<a href="" class="vai-al-sito">VEDI TUTTO</a>
+		</section>
+
+
+		<section class="home-box" id="home-sba">
+			<header>
+				<h1>Sistema Bibliotecario di Ateneo</h1>
+			</header>
+			<div class="box-body">
+				<form>
+					<input type="text" class="search-box" value="Cerca nel catalogo">
+				</form>
+			</div>
+			<a href="" class="vai-al-sito">VAI AL SITO</a>
+		</section>
+
+
+		<section class="home-box" id="home-sma">
+			<header>
+				<h1>Sistema Museale di Ateneo</h1>
+			</header>
+			<figure>
+				<div class="pics-container">
+				<img class="pics" src="res/villa-lq-01.jpg" alt="immagine sma">
+				</div>
+				<h2 class="didascalia">Villa la Quiete</h2>
+				<div class="carousel-points"></div>
+			</figure>
+			<a href="" class="vai-al-sito">VAI AL SITO</a>
+		</section>
+
+		<section class="home-box" id="home-fup">
+			<header>
+				<h1>Florence University Press</h1>
+			</header>
+			<div class="box-body">
+				<div class="book-container">
+					<img class="book-cover" src="res/book-01.png" alt="books fup">
+					<img class="book-cover" src="res/book-02.png" alt="books fup">
+					<img class="book-cover" src="res/book-03.png" alt="books fup">
+				</div>
+				<div class="carousel-points"></div>
+			</div>
+			<a href="" class="vai-al-sito">VAI AL SITO</a>
+		</section>
+
+		<section class="home-box" id="home-pub">
+			<div class="box-body">
+				<div id="avvisi">
+					<a href="">
+						<h1>Avvisi</h1><img class="next-icon" src="res/freccetta-bianca-dx.svg" alt="open"></a>
+				</div>
+				<div id="reclutamento">
+					<a href="">
+						<h1>Reclutamento e Assunzioni</h1><img class="next-icon" src="res/freccetta-bianca-dx.svg" alt="open"></a>
+				</div>
+				<div id="albo-e-bandi">
+					<a href="">
+						<h1>Albo e Bandi</h1><img class="next-icon" src="res/freccetta-bianca-dx.svg" alt="open"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="home-box" id="home-issuu">
+			<header>
+				<h1>ISSUU</h1>
+			</header>
+			<div class="box-body">
+				<div class="book-container">
+					<img class="book-cover" src="res/issuu-01.png" alt="books issuu">
+					<img class="book-cover" src="res/issuu-02.png" alt="books issuu">
+					<img class="book-cover" src="res/issuu-03.png" alt="books issuu">
+				</div>
+				<div class="carousel-points"></div>
+			</div>
+			<a href="" class="vai-al-sito">VAI AL SITO</a>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="footer-link" id="ammin-trasp">
+			<h1>Amministrazione trasparente</h1>
+		</div>
+		<div class="footer-link" id="siaf">
+			<h1>SIAF</h1>
+		</div>
+		<div class="footer-link" id="urp">
+			<h1>URP</h1>
+		</div>
+		<div class="footer-link" id="personale">
+			<h1>Personale</h1>
+		</div>
+		<div id="social-and-info">
+			<div id="social-links">
+				<img class="social-links" src="res/social-sprite.svg">
+			</div>
+			<div id="info">
+				<h2>Università degli Studi di Firenze - UniFI</h2>
+				<p>Piazza San Marco, 4 - 50121 Firenze</p>
+				<p>Centalino +39 055 27571</p>
+				<p>E-mail: urp@unifi.it</p>
+				<p>Posta certificata: ateneo@pec.unifi.it</p>
+				<p>P.IVA/Cos.Fis. 01279680480</p>
+			</div>
+		</div>
+	</footer>
+
+	<div id="desktop-alert" class="desktop">
+		<h1> VERSIONE DESKTOP IN COSTRUZIONE </h1>
+		<h1> Restringere la finestra per vedere la versione mobile.</h1>
 	</div>
 
 
 
-
-
-
-
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
