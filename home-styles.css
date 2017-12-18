@@ -30,17 +30,20 @@ a {
 
 #home-slides {
 	position: relative;
-	padding-top: 64.5%;
+	height: 260px;
 	background-image: url(res/slide-01.jpg);
-	background-size: 100%;
+	background-size: cover;
+	background-position: center
 }
 
+/*
 @media screen and (min-width: 769px) {
 	#home-slides {
 		padding-top: 0;
 		height: 500px
 	}
 }
+*/
 
 #calendar {
 	position: absolute;
@@ -56,7 +59,7 @@ a {
 #calendar-goto a {
 	float: left;
 	margin-top: 22px;
-	margin-left: 10px;
+	margin-left: 20px;
 	color: #fff;
 	text-decoration: underline;
 	color: #ddd;
@@ -80,20 +83,21 @@ a {
 
 .day-block {
 	clear: both;
+	margin: 0 20px;
+	border-top: 1px solid #fff;
 }
 
 #calendar .data {
 	position: relative;
 	float: left;
 	width: 50px;
-	margin-left: 20px;
 	color: #fff;
 }
 
 #calendar .day {
 	font-size: 40px;
 	font-weight: 700;
-} 
+}
 
 #calendar .month {
 	text-transform: uppercase;
@@ -101,32 +105,40 @@ a {
 	left: 60px;
 	top: 5px;
 	font-weight: 700;
-} 
+}
 
 #calendar .year {
 	text-transform: uppercase;
 	position: absolute;
 	left: 60px;
 	top: 20px;
-} 
+}
 
 #calendar .events {
-	width: 220px;
+	width: calc(100% - 147px);
 	float: right;
-	padding-right: 12px;
 }
 
 
 #calendar li {
 	height: 47px;
-	padding: 7px 10px;
+	padding-left: 4px;
 	font-size: 16px;
-	line-height: 1;
-	border-top: 1px solid #fff;
+	line-height: 1.2;
+	border-bottom: 1px solid #fff;
 	box-sizing: border-box;
 	color: #fff;
 	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
+
+#calendar li:last-child {
+	border: none;
+}
+
+
 div#lente-slides {
 	position: absolute;
 	width: 100%;
@@ -170,7 +182,7 @@ div#lente-slides {
 	width: 100%;
 }
 
-.home-box .pics-container{
+.home-box .pics-container {
 	padding-bottom: 54%;
 	background: pink;
 }
@@ -245,7 +257,7 @@ div#lente-slides {
 	padding-bottom: 20px;
 }
 
-.carousel-points{
+.carousel-points {
 	background-image: url(res/pallini.svg);
 	background-repeat: no-repeat;
 	height: 14px;

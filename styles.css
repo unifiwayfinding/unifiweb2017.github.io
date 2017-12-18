@@ -1,7 +1,13 @@
 /* APPUNTI BREAKPOINTS
 smartphones
-larghezza-portrait: 320-504 px
-parghezza-landscape: 346-812
+larghezza-portrait: 320-414 px
+parghezza-landscape: 346-740 (812 iphone X)
+
+iphone 4 		320 x 480
+iphone 5 		320 x 568
+iphone 6,7,8	375 x 667
+iphone X 		375 x 812
+iphone 6+,7+,8+ 414 x 736
 
 tablets
 larghezza-portrait: 600-800 (1024) px
@@ -72,6 +78,7 @@ header {
 	top: 0;
 	right: 0;
 	width: 70%;
+	min-width: 280px;
 	text-align: right;
 	z-index: 4;
 	background: #004180;
