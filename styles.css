@@ -33,7 +33,7 @@ input {
 header,
 main,
 footer {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 
@@ -119,11 +119,11 @@ ul#upper-menu {
 	background: #668BB1;
 }
 
-ul#unifi-comunica {
+ul#unifi-comunica-menu {
 	background: #fff;
 }
 
-#unifi-comunica li {
+li#unifi-comunica {
 	color: #A00009;
 }
 
@@ -300,6 +300,7 @@ article img.immagine-doppia:first-child {
 
 footer {
 	background-color: #004180;
+	padding-top: 10px
 }
 
 @media screen and (min-width: 769px) {
@@ -327,7 +328,7 @@ footer {
 }
 
 .footer-link h1 {
-	font-size: 20px;
+	font-size: 17px;
 	padding: 21px 0;
 	bottom: 33%;
 	left: 7%;

@@ -15,7 +15,7 @@ main.home div {
 main.home header,
 main.home figure,
 main.home .box-body {
-	padding: 0 20px;
+	padding: 0 10px;
 	box-sizing: border-box;
 }
 
@@ -60,9 +60,8 @@ a {
 	float: left;
 	margin-top: 22px;
 	margin-left: 20px;
-	color: #fff;
+	color: rgba(255,255,255,0.5);
 	text-decoration: underline;
-	color: #ddd;
 	font-weight: 700;
 }
 
@@ -83,7 +82,7 @@ a {
 
 .day-block {
 	clear: both;
-	margin: 0 20px;
+	margin: 0 10px;
 	border-top: 1px solid #fff;
 }
 
@@ -92,26 +91,33 @@ a {
 	float: left;
 	width: 50px;
 	color: #fff;
+	padding-top: 5px;
 }
 
 #calendar .day {
-	font-size: 40px;
+	font-size: 33px;
 	font-weight: 700;
 }
 
 #calendar .month {
 	text-transform: uppercase;
 	position: absolute;
-	left: 60px;
-	top: 5px;
+	top: 8px;
 	font-weight: 700;
+	font-size: 14px;
 }
 
 #calendar .year {
 	text-transform: uppercase;
 	position: absolute;
-	left: 60px;
-	top: 20px;
+	top: 22px;
+
+}
+
+#calendar .year,
+#calendar .month {
+	font-size: 14px;
+	left: 52px;
 }
 
 #calendar .events {
@@ -223,7 +229,6 @@ div#lente-slides {
 	border-radius: 0;
 	box-sizing: border-box;
 	padding-left: 20px;
-	color: #888;
 }
 
 
@@ -252,7 +257,7 @@ div#lente-slides {
 .home-box .descriptions {
 	font-weight: 700;
 	font-size: 20px;
-	border-bottom: 3px solid #000;
+	border-bottom: 1px solid #000;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -260,9 +265,9 @@ div#lente-slides {
 .carousel-points {
 	background-image: url(res/pallini.svg);
 	background-repeat: no-repeat;
-	height: 14px;
+	height: 11px;
 	left: 50%;
-	margin: 7px 0 20px -22px;
+	margin: 7px 0 20px -18px;
 }
 
 #home-sma .didascalia {
@@ -298,10 +303,10 @@ div#lente-slides {
 
 .vai-al-sito {
 	position: absolute;
-	padding-right: 20px;
+	padding-right: 10px;
 	right: 0;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: underline;
 }
 
@@ -313,7 +318,7 @@ div#lente-slides {
 
 
 #home-sba .vai-al-sito {
-	color: #777;
+	color: #668BB1;
 	bottom: 19px;
 }
 
@@ -324,7 +329,7 @@ div#lente-slides {
 
 #home-fup .vai-al-sito,
 #home-issuu .vai-al-sito {
-	color: #000;
+	color: #888;
 	bottom: 18px;
 }
 
