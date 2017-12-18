@@ -43,7 +43,7 @@ footer {
 header {
 	background: #004180;
 	position: relative;
-	padding: 20px;
+	padding: 20px 10px;
 }
 
 #logo {
@@ -69,7 +69,7 @@ header {
 	height: 22px;
 	width: 36px;
 	top: 49px;
-	right: 16px;
+	right: 10px;
 	cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ header {
 	background-repeat: no-repeat;
 	height: 27px;
 	width: 26px;
-	margin: 47px 23px 52px;
+	margin: 47px 10px 52px;
 	cursor: pointer;
 }
 
@@ -107,6 +107,13 @@ header {
 
 #servizi-ol {
 	font-weight: 700;
+	font-size: 19px;
+	padding-right: 43px;
+	background-image: url(res/freccia.svg);
+	background-repeat: no-repeat;
+	background-size: 29px;
+	background-position: right;
+	
 }
 
 
@@ -155,7 +162,7 @@ nav li:last-child {
 .cerca-mobile-container {
 	position: absolute;
 	width: calc(100% - 97px);
-	height: 60px;
+	height: 50px;
 	top: 100%;
 	right: 0;
 	z-index: 3;
