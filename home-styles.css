@@ -228,7 +228,11 @@ div#lente-slides {
 	border: none;
 	border-radius: 0;
 	box-sizing: border-box;
-	padding-left: 20px;
+	padding-left: 10px;
+	background-image: url(res/cerca-icon-b.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 45px;
 }
 
 
@@ -252,7 +256,10 @@ div#lente-slides {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: #fff;
-}
+	background-image: url(res/freccetta-bianca-dx.svg);
+	background-repeat: no-repeat;
+	background-size: 9px;
+	background-position: right;}
 
 .home-box .descriptions {
 	font-weight: 700;

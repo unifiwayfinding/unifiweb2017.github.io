@@ -20,6 +20,10 @@ $(function () {
 		$("nav").hide();
 	});
 
+	$("#obscuro").click(function () {
+		$("nav").hide();
+	});
+
 	$("#cerca-mobile-button").click(function () {
 		$("#cerca-mobile-field").toggle();
 	});
@@ -27,8 +31,12 @@ $(function () {
 	$("#calendar-button").click(function () {
 		$("#calendar").show();
 	});
-	
+
 	$("#calendar-close").click(function () {
 		$("#calendar").hide();
+	});
+
+	$(".apribile").click(function () {
+		location.href = "page.html";
 	});
 });
