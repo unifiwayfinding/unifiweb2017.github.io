@@ -1,7 +1,7 @@
-/* APPUNTI BREAKPOINTS
+/* APPUNTI BREAKPOINTS MOBILE
 smartphones
 larghezza-portrait: 320-414 px
-parghezza-landscape: 346-740 (812 iphone X)
+larghezza-landscape: 346-740 (812 iphone X)
 
 iphone 4 		320 x 480
 iphone 5 		320 x 568
@@ -50,17 +50,6 @@ header {
 	height: 83px;
 }
 
-/*
-@media screen and (min-width: 769px) {
-	header {
-		padding-top: 0px;
-		height: 210px;
-	}
-	#logo {
-		left: 36px;
-	}
-}
-*/
 
 #mobile-nav-button {
 	position: absolute;
@@ -194,56 +183,6 @@ nav li:last-child {
 
 
 
-/* Mobile|Desktop Breakpoint */
-
-.desktop {
-	display: none;
-}
-
-@media screen and (min-width: 1025px) {
-	header {
-		height: 306px;
-	}
-
-	#logo {
-		top: 20px;
-		height: 117px;
-	}
-
-	.mobile {
-		display: none;
-	}
-
-	.desktop {
-		display: block;
-	}
-}
-
-/* Desktop Navigation */
-
-.menu-scuole {}
-
-.menu-dipartimenti {}
-
-.menu-sopra,
-.menu-sotto {
-	position: absolute;
-	width: 100%;
-	border-bottom: .1px solid #ccc;
-	background: #fff;
-}
-
-.menu-sopra {
-	height: 60px;
-	bottom: 36px;
-}
-
-.menu-sotto {
-	height: 36px;
-	bottom: 0;
-}
-
-
 
 /* Main
 ————————————————————————————————————————*/
@@ -310,20 +249,6 @@ footer {
 	padding-top: 10px
 }
 
-@media screen and (min-width: 769px) {
-	.footer-link {
-		padding-top: 0;
-		height: 95px
-	}
-	;
-	#social-and-info {
-		padding-top: 0;
-		height: 384px
-	}
-	;
-}
-
-
 .footer-link {
 	position: relative;
 	color: #fff;
@@ -375,6 +300,24 @@ footer #info a {
 
 
 
+/* MOBILE-DESKTOP BREAKPOINT
+————————————————————————————————————————*/
+
+.desktop {
+	display: none;
+}
+
+@media screen and (min-width: 415px) {
+
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
+}
+
 
 /* WORK IN PROGRESS
 ————————————————————————————————————————*/
@@ -385,7 +328,7 @@ footer #info a {
 	padding-top: 30px;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 415px) {
 	header,
 	main,
 	footer,
